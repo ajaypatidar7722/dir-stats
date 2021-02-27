@@ -12,5 +12,8 @@
   "bugs": {
     "url": "https://github.com/ajaypatidar7722/dir-stats/issues"
   },
-  "homepage": "https://github.com/ajaypatidar7722/dir-stats#readme"
+  "homepage": "https://github.com/ajaypatidar7722/dir-stats#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
 }
