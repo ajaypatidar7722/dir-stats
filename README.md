@@ -1,12 +1,15 @@
 # Dir Stats
 A simple node.js application to list files and their attributes for a give local filesystem path.
 
+> **Updated:** This repo now also includes the graphql APIs. Navigate to http://localhost:3000/graphql to see the schema.
+
 I've kept folder structure and project setup very minimal. Also there are some key stuff missing like 
 - API parameter validation (I generally use [joi](https://github.com/sideway/joi) for this)
 - API Doc
 - Unit tests
 
 Below are the instructions to start the application.
+
 
 ## Prerequisite
 
@@ -51,8 +54,14 @@ This will create a directory called `testDir` under `scratchpad` directory and w
 
 ## Example queries
 
+### REST API
+
 - http://localhost:3000/fs/stats?path=/
 
 - http://localhost:3000/fs/stats?path=/Users/ajay/work/test-tasks/dir-stats
 
 - http://localhost:3000/fs/stats?path=/Users/ajay/work/test-tasks/dir-stats&page=2&count=30
+
+### Graph API
+
+Please navigate to http://localhost:3000/graphql to see the query schema
