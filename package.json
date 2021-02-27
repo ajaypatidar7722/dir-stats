@@ -9,7 +9,8 @@
   },
   "scripts": {
     "start": "node ./lib/app.js",
-    "dev": "nodemon ./lib/app.js"
+    "dev": "nodemon ./lib/app.js",
+    "generateMockFiles": "nodemon ./scratchpad/generateTestFiles.js"
   },
   "author": "",
   "license": "ISC",
