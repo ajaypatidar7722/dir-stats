@@ -1,0 +1,16 @@
+{
+  "name": "dir-stats",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ajaypatidar7722/dir-stats.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ajaypatidar7722/dir-stats/issues"
+  },
+  "homepage": "https://github.com/ajaypatidar7722/dir-stats#readme"
+}
