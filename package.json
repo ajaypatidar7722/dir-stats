@@ -8,7 +8,8 @@
     "url": "git+https://github.com/ajaypatidar7722/dir-stats.git"
   },
   "scripts": {
-    "start": "node ./lib/app.js"
+    "start": "node ./lib/app.js",
+    "dev": "nodemon ./lib/app.js"
   },
   "author": "",
   "license": "ISC",
@@ -18,5 +19,8 @@
   "homepage": "https://github.com/ajaypatidar7722/dir-stats#readme",
   "dependencies": {
     "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.7"
   }
 }
