@@ -12,8 +12,14 @@ const stat = util.promisify(fs.stat);
  * Here add all functions that requires to deal filesystem
  */
 class FileSystemService {
-  static stats = async (filePath) => {
-    const files = await readDir(filePath);
+  static stats = async (filePath, startFrom, upTo) => {
+    let files = await readDir(filePath);
+    const total = files.length;
+
+    if (startFrom && upTo) {
+      files = files.slice(startFrom, upTo);
+    }
+
     const promises = files.map(async (file) => {
       // extracting key information about the file
       const extName = path.extname(file);
@@ -31,7 +37,11 @@ class FileSystemService {
       };
     });
 
-    return Promise.all(promises);
+    const fileRecords = await Promise.all(promises);
+    return {
+      files: fileRecords,
+      total,
+    };
   }
 };
 
