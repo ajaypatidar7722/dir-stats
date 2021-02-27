@@ -16,8 +16,8 @@ class FileSystemService {
     let files = await readDir(filePath);
     const total = files.length;
 
-    if (startFrom && upTo) {
-      files = files.slice(startFrom, upTo);
+    if ((startFrom || startFrom === 0) && upTo) {
+      files = [...files].slice(startFrom, upTo);
     }
 
     const promises = files.map(async (file) => {
