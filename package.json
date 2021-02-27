@@ -7,6 +7,9 @@
     "type": "git",
     "url": "git+https://github.com/ajaypatidar7722/dir-stats.git"
   },
+  "scripts": {
+    "start": "node ./lib/app.js"
+  },
   "author": "",
   "license": "ISC",
   "bugs": {
