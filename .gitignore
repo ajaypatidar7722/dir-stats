@@ -1,2 +1,6 @@
 # package dependencies
 node_modules
+
+# generated files
+scratchpad/testDir
+.DS_Store
